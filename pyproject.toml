@@ -10,6 +10,7 @@ packages = [{ include = "myapp" }]
 python = "^3.12"
 typer = { extras = ["all"], version = "^0.12.3" }
 SQLAlchemy = "^2.0"
+aiosqlite = "^0.21.0"
 [tool.poetry.scripts]
 myapp = "myapp.cli.__main__:app"
 
