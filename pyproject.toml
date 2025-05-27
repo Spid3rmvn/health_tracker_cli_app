@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "health-tracker-cli-app"
+version = "0.0.1"
+description = "The Health Simplified CLI Application empowers users to track daily food intake, set nutrition goals, and plan weekly meals—all through an intuitive command-line interface. This project serves as a comprehensive hands-on exercise for students to apply OOP design patterns, SQLAlchemy ORM, and CLI tooling in Python."
+authors = ["Godwin Mayodi <godwin.mayodi@student.moringaschool.com>"]
+readme = "README.md"
+packages = [{ include = "myapp" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+typer = { extras = ["all"], version = "^0.12.3" }
+SQLAlchemy = "^2.0"
+[tool.poetry.scripts]
+myapp = "myapp.cli.__main__:app"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
