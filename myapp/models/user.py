@@ -5,7 +5,7 @@ from sqlalchemy.orm import relationship
 class User(Base):
     __tablename__ = "users"
 
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True, nullable=False)
     name = Column(String, unique=True, nullable=True)
 
     entries = relationship("FoodEntry", back_populates="user")
