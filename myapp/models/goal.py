@@ -1,4 +1,6 @@
 from sqlalchemy import Column, Integer, ForeignKey
+from sqlalchemy.orm import relationship
+
 from myapp.db.database import Base
 
 class Goal(Base):
@@ -8,3 +10,5 @@ class Goal(Base):
     user_id = Column(Integer, ForeignKey('users.id'), nullable=False)
     daily = Column(Integer, nullable=False)
     weekly = Column(Integer, nullable=False)
+
+    user = relationship("User", back_populates="goals")

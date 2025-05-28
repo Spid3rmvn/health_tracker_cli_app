@@ -1,5 +1,4 @@
-from myapp.db.database import Base, engine
-from myapp.models.user import User
+from .database import Base, engine, SessionLocal
 from myapp.models.food_entry import FoodEntry
 from myapp.models.goal import Goal
 from myapp.models.meal_plan import MealPlan
