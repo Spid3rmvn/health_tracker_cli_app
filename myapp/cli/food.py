@@ -30,7 +30,7 @@ def list_food_entries(user_id: int):
             typer.echo(f"ID: {e.id}, Food: {e.food}, Calories: {e.calories}, Date: {e.date}")
 
 @app.command()
-def update_food_entry_cmd(entry_id: int, food: Optional[str] = None, calories: Optional[int] = None, date: Optional[str] = None):
+def update_food_entr_cmd(entry_id: int, food: Optional[str] = None, calories: Optional[int] = None, date: Optional[str] = None):
     """Update an existing food entry."""
     entry_date = None
     if date:
