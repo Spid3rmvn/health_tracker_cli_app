@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1148c383-4a23-451a-a25c-eea5a5a8c7cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_tracker.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/cli/food.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/cli/food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/cli/goal.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/cli/goal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/cli/meal_plan.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/cli/meal_plan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/cli/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/cli/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_tracker.db" beforeDir="false" afterPath="$PROJECT_DIR$/health_tracker.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +65,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feat/crud-actions&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#4 on feat/crud-actions&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/codegoddy/PycharmProjects/health_tracker_cli_app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -159,6 +155,7 @@
       <workItem from="1748500397666" duration="3903000" />
       <workItem from="1748505826168" duration="5892000" />
       <workItem from="1748551844992" duration="10736000" />
+      <workItem from="1748562764134" duration="480000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 import typer
 from typing import Optional
 from datetime import datetime
-from myapp.controllers.food_entry_controller import (  # FIXED TYPO HERE
+from myapp.controllers.food_entry_controller import (
     create_food_entry, get_food_entries_by_user, update_food_entry, delete_food_entry
 )
 from myapp.db.db import get_db

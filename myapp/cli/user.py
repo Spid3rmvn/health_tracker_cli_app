@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from myapp.controllers.user_controller import (
     create_user, get_user_by_name, get_all_users, update_user, delete_user
 )
-from myapp.db.db import get_db  # Your db session generator
+from myapp.db.db import get_db
 
 app = typer.Typer()
 
@@ -45,6 +45,6 @@ def delete_user_cmd(user_id: int):
         success = delete_user(db, user_id)
         typer.echo("User deleted" if success else "User not found")
 
-# 👇 This is the missing part you need for CLI execution
+
 if __name__ == "__main__":
     app()
