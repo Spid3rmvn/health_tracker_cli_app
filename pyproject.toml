@@ -8,7 +8,7 @@ packages = [{ include = "myapp" }]
 
 [tool.poetry.dependencies]
 python = "^3.12"
-typer = { extras = ["all"], version = "^0.12.3" }
+typer = { extras = ["all"], version = "^0.9.0" }
 SQLAlchemy = "^2.0"
 aiosqlite = "^0.21.0"
 [tool.poetry.scripts]
