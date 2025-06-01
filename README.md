@@ -418,13 +418,13 @@ CREATE TABLE meal_plans (
 
 ## 🧪 Testing
 
-The project includes a comprehensive test suite with 70+ tests covering models, controllers, CLI commands, and database operations.
+The project includes an essential test suite with 22 tests covering core functionality, CLI commands, and report generation.
 
-### Test Categories
+### Essential Test Files
 
-- **Unit Tests** (`@pytest.mark.unit`): Model validation and business logic
-- **Integration Tests** (`@pytest.mark.integration`): Database operations and controllers
-- **CLI Tests** (`@pytest.mark.cli`): Command-line interface functionality
+- **Core Tests** (`tests/test_essential.py`): Essential functionality tests for models, controllers, and database operations
+- **CLI Tests** (`tests/test_cli_essential.py`): Essential CLI command tests
+- **Report Tests** (`test_report.py`): Tests for the report generation functionality
 
 ### Running Tests
 
@@ -434,58 +434,42 @@ The project includes a comprehensive test suite with 70+ tests covering models, 
 poetry install  # Includes dev dependencies
 ```
 
-#### Run All Tests
-
-```bash
-pytest tests/
-```
-
-#### Run Tests with Coverage
-
-```bash
-pytest tests/ --cov=myapp --cov-report=term-missing --cov-report=html
-```
-
-#### Run Specific Test Categories
-
-```bash
-# Unit tests only
-pytest tests/ -m unit
-
-# Integration tests only
-pytest tests/ -m integration
-
-# CLI tests only
-pytest tests/ -m cli
-```
-
-#### Run Specific Test Files
-
-```bash
-# Model tests
-pytest tests/test_models/ -v
-
-# Controller tests
-pytest tests/test_controllers/ -v
-
-# CLI tests
-pytest tests/test_cli/ -v
-```
-
-#### Using the Test Runner
+#### Run Essential Tests
 
 ```bash
 python run_tests.py
 ```
 
+This will run all essential tests and provide a summary of the results.
+
+#### Run Individual Test Files
+
+```bash
+# Core functionality tests
+pytest tests/test_essential.py -v
+
+# CLI tests
+pytest tests/test_cli_essential.py -v
+
+# Report tests
+pytest test_report.py -v
+```
+
+#### Run Tests with Coverage
+
+```bash
+pytest tests/test_essential.py tests/test_cli_essential.py test_report.py -v --cov=myapp --cov-report=term-missing
+```
+
 ### Test Coverage
 
-The test suite achieves high coverage across:
+The essential test suite achieves good coverage across the core functionality:
 
-- ✅ **Models**: User, FoodEntry, Goal, MealPlan (23 tests)
-- ✅ **Controllers**: CRUD operations with database integration
-- ✅ **CLI Commands**: User and food management with mocking
-- ✅ **Database**: Connection, schema, constraints, transactions
+- ✅ **Models**: User, FoodEntry, Goal, MealPlan
+- ✅ **Controllers**: Basic CRUD operations
+- ✅ **CLI Commands**: User and food management
+- ✅ **Report Generation**: Nutrition reports with date ranges
+- ✅ **Database**: Connection and basic operations
 
 ## 🏗️ Project Structure
 
