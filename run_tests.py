@@ -41,10 +41,10 @@ def main():
     # Test commands to run - only essential tests
     test_commands = [
         ("pytest --version", "Check pytest installation"),
-        ("pytest tests/test_essential.py -v", "Run essential core tests"),
-        ("pytest tests/test_cli_essential.py -v", "Run essential CLI tests"),
-        ("pytest test_report.py -v", "Run report tests"),
-        ("pytest tests/test_essential.py tests/test_cli_essential.py test_report.py -v --cov=myapp --cov-report=term-missing", "Run all essential tests with coverage"),
+        ("pytest tests/test_essential.py -v -p no:warnings", "Run essential core tests"),
+        ("pytest tests/test_cli_essential.py -v -p no:warnings", "Run essential CLI tests"),
+        ("pytest test_report.py -v -p no:warnings", "Run report tests"),
+        ("pytest tests/test_essential.py tests/test_cli_essential.py test_report.py -v -p no:warnings --cov=myapp --cov-report=term-missing", "Run all essential tests with coverage"),
     ]
 
     # Run each test command

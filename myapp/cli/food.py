@@ -35,7 +35,7 @@ def list_food_entries(user_id: int = typer.Argument(..., help="ID of the user"))
             typer.echo(f"ID: {e.id}, Food: {e.food}, Calories: {e.calories}, Date: {e.date}")
 
 @app.command()
-def update_food_entr_cmd(
+def update_food_entry_cmd(
     entry_id: int = typer.Argument(..., help="ID of the food entry to update"),
     food: Optional[str] = typer.Option(None, "--food", help="New food name"),
     calories: Optional[int] = typer.Option(None, "--calories", help="New calorie count"),
