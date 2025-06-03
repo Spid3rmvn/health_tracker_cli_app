@@ -215,7 +215,7 @@ python -m myapp.cli food list-food-entries 1
 #### Update Food Entry
 
 ```bash
-python -m myapp.cli food update-food-entr-cmd <entry_id> [--food <name>] [--calories <amount>] [--date YYYY-MM-DD]
+python -m myapp.cli food update-food-entry-cmd <entry_id> [--food <name>] [--calories <amount>] [--date YYYY-MM-DD]
 ```
 
 **Example:**
